@@ -13,13 +13,11 @@ public class AgregarCarritoStep {
 
         scroll.scrollElemento(agregarAlCarritoPageObject.getDriver(),agregarAlCarritoPageObject.getTxtTitulo());
 
-        //EsperaImplicita.esperaImplicita(7);
-
         agregarAlCarritoPageObject.getDriver().findElement(agregarAlCarritoPageObject.getBtnAgregar()).click();
     }
     @Step("ir al carrito")
     public void irCarrito(){
-        EsperaImplicita.esperaImplicita(7);
+        EsperaImplicita.esperaImplicita(4);
         agregarAlCarritoPageObject.getDriver().findElement(agregarAlCarritoPageObject.getBtnIrCarrito()).click();
     }
 }

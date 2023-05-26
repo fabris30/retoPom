@@ -33,7 +33,7 @@ public class RegistroUsuarioStep {
   @Step("Ingresar correo")
   public void ingresarCorreo() throws IOException {
     registroUsuarioPageObject.getDriver().findElement(registroUsuarioPageObject.getTxtCorrreo())
-            .sendKeys(excel.leerDatosExcel("Datos.xlsx","DatosCuenta",1,2));
+            .sendKeys(excel.leerDatosExcel("Datos.xlsx","DatosCuenta",4,2));
   }
   @Step("Clic en continuar")
   public void clicContinuar(){

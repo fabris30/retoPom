@@ -1,7 +1,6 @@
 package com.alkomprar.serenity.steps;
 
 import com.alkomprar.serenity.pageObject.CargarProductoPageObject;
-import com.alkomprar.serenity.utils.EsperaImplicita;
 import net.thucydides.core.annotations.Step;
 
 public class CargarProductoStep {

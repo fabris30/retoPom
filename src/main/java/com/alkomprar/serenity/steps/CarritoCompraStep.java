@@ -4,7 +4,6 @@ import com.alkomprar.serenity.pageObject.CarritoCompraPageObject;
 import com.alkomprar.serenity.utils.EsperaImplicita;
 import net.thucydides.core.annotations.Step;
 
-import java.util.Random;
 
 public class CarritoCompraStep {
 
@@ -16,22 +15,10 @@ public class CarritoCompraStep {
         carrito.open();
     }
 
-    @Step("Seleccionar un producto aleatorio")
-    public void seleccionarProductoAleatorio() {
-
-        //EsperaImplicita.esperaImplicita(7);
-
-        int tamanoArregloArticulos = carrito.liProducto.size();
-        Random random = new Random();
-        int indiceDelProducto = random.nextInt(tamanoArregloArticulos);
-        carrito.liProducto.get(indiceDelProducto).click();
-
-
-    }
-    @Step("selecciona el primer producto ")
-    public void seleccionarEstatico() {
+    @Step("selecciona un producto ")
+    public void seleccionarProducto() {
         EsperaImplicita.esperaImplicita(4);
-        carrito.inputSubCategoria.click();
+        carrito.liProducto.click();
     }
 
 }

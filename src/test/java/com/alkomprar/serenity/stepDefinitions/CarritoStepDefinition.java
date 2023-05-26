@@ -37,8 +37,7 @@ public class CarritoStepDefinition {
     @Cuando("^se agregue de forma aleatoria al carrito de compra$")
     public void seAgregueDeFormaAleatoriaAlCarritoDeCompra() {
 
-        //carritoCompraStep.seleccionarEstatico();
-        carritoCompraStep.seleccionarProductoAleatorio();
+        carritoCompraStep.seleccionarProducto();
         validarProductoStep.validarProducto();
         agregarCarritoStep.agregarCarrito();
         agregarCarritoStep.irCarrito();

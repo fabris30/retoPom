@@ -4,7 +4,7 @@ import com.alkomprar.serenity.pageObject.DatosRegistroPageObject;
 import com.alkomprar.serenity.utils.Excel;
 import com.alkomprar.serenity.utils.Scroll;
 import net.thucydides.core.annotations.Step;
-import org.fluentlenium.core.annotation.Page;
+
 
 import java.io.IOException;
 
